@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+	<script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/ru.js"></script>
+	<title>Document</title>
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="overlay"></div>
+
+		<nav class="nav">
+			<div class="nav__background"></div>
+			<div class="nav__content">
+				<button class="nav__button first">
+					<img src="./img/Arrow up.svg" alt="" class="nav__image">
+					<span class="nav__text">Домой</span>
+				</button>
+				<button class="nav__button">
+					<img src="./img/People.svg" alt="" class="nav__image">
+					<span class="nav__text">Сотрудники и очереди</span>
+				</button>
+				<button class="nav__button first">
+					<img src="./img/Scheme.svg" alt="" class="nav__image">
+					<span class="nav__text">Маршрутизация</span>
+				</button>
+				<button class="nav__button">
+					<img src="./img/Gear.svg" alt="" class="nav__image">
+					<span class="nav__text">Настройки</span>
+				</button>
+				<button class="nav__button">
+					<img src="./img/Shedule.svg" alt="" class="nav__image">
+					<span class="nav__text">Отчёты</span>
+				</button>
+				<button class="nav__button first">
+					<img src="./img/Sensor.svg" alt="" class="nav__image">
+					<span class="nav__text">Мониторинг</span>
+				</button>
+				<button class="nav__button">
+					<img src="./img/Thumb up.svg" alt="" class="nav__image">
+					<span class="nav__text">Оценки звонков</span>
+				</button>
+				<button class="nav__button first">
+					<img src="./img/Auto informator.svg" alt="" class="nav__image">
+					<span class="nav__text">Автоинформатор</span>
+				</button>
+				<button class="nav__button">
+					<img src="./img/Book.svg" alt="" class="nav__image">
+					<span class="nav__text">Книга контактов</span>
+				</button>
+				<button class="nav__button">
+					<img src="./img/Tube check.svg" alt="" class="nav__image">
+					<span class="nav__text">Контроль пропущенных</span>
+				</button>
+				<button class="nav__button">
+					<img src="./img/Camera.svg" alt="" class="nav__image">
+					<span class="nav__text">Видеоконференция</span>
+				</button>
+				<button class="nav__button">
+					<img src="./img/Sound waves.svg" alt="" class="nav__image">
+					<span class="nav__text">Речевая аналитика</span>
+				</button>
+				<button class="nav__button">
+					<img src="./img/Bag.svg" alt="" class="nav__image">
+					<span class="nav__text">Маркетплейс</span>
+				</button>
+				<button class="nav__button">
+					<img src="./img/Info.svg" alt="" class="nav__image">
+					<span class="nav__text">Информация</span>
+				</button>
+			</div>
+		</nav>
+
+		<div class="reports active">
+			<div class="reports__title">
+				<h1>Отчёты</h1>
+			</div>
+			<div class="reports__subtitle">
+				<span>Журнал и статистика</span>
+				<span>Текущие вызовы пользователя</span>
+			</div>
+			<div class="reports__decor">
+				<span></span>
+			</div>
+			<div class="reports__buttons">
+
+				<button class="reports__button filters-button">
+					<img src="./img/Filter.svg" alt="">
+					<span class="button__text">Фильтр</span>
+				</button>
+				
+				<button class="reports__button">
+					<img src="./img/Share.svg" alt="">
+					<span class="button__text">Поделиться отчетом</span>
+				</button>
+
+				<button class="reports__button">
+					<img src="./img/My filters.svg" alt="">
+					<span class="button__text">Мои фильтры</span>
+				</button>
+
+				<button class="reports__button">
+					<img src="./img/Download.svg" alt="">
+					<span class="button__text">Скачать отчет</span>
+				</button>
+
+			</div>
+			<div class="reports__data">
+				<span>Данные за </span><span class="data__main">неделю с учетом фильтра</span>
+			</div>
+			<div class="reports__summary">
+				<span>Сводные данные по звонкам</span>
+				<button class="summary__show">
+					<img src="./img/Arrow.svg" alt="">
+				</button>
+			</div>
+			<div class="reports__items">
+
+				<div class="reports__item">
+					<div class="item__image">
+						<img src="./img/Calls.svg" alt="">
+					</div>
+					<div class="item__stats">
+						<span>20 261</span>
+					</div>
+					<div class="item__name">
+						<span>всего вызовов</span>
+					</div>
+				</div>
+
+				<div class="reports__item">
+					<div class="item__image">
+						<img src="./img/Calls.svg" alt="">
+					</div>
+					<div class="item__stats">
+						<span>8 060</span>
+					</div>
+					<div class="item__name">
+						<span>всего входящих</span>
+					</div>
+				</div>
+
+				<div class="reports__item">
+					<div class="item__image">
+						<img src="./img/Calls.svg" alt="">
+					</div>
+					<div class="item__stats">
+						<span>12 201</span>
+					</div>
+					<div class="item__name">
+						<span>всего исходящих</span>
+					</div>
+				</div>
+
+				<div class="reports__item">
+					<div class="item__image">
+						<img src="./img/Calls.svg" alt="">
+					</div>
+					<div class="item__stats">
+						<span>5 517</span>
+					</div>
+					<div class="item__name">
+						<span>входящих принятых</span>
+					</div>
+				</div>
+
+				<div class="reports__item">
+					<div class="item__image">
+						<img src="./img/Calls.svg" alt="">
+					</div>
+					<div class="item__stats">
+						<span>2 543</span>
+					</div>
+					<div class="item__name">
+						<span>входящих неотвеченных</span>
+					</div>
+				</div>
+
+				<div class="reports__item">
+					<div class="item__image">
+						<img src="./img/Calls.svg" alt="">
+					</div>
+					<div class="item__stats">
+						<span>7 556</span>
+					</div>
+					<div class="item__name">
+						<span>исходящих принятых</span>
+					</div>
+				</div>
+
+				<div class="reports__item">
+					<div class="item__image">
+						<img src="./img/Calls.svg" alt="">
+					</div>
+					<div class="item__stats">
+						<span>4 645</span>
+					</div>
+					<div class="item__name">
+						<span>исходящих неотвеченных</span>
+					</div>
+				</div>
+
+				<div class="reports__item">
+					<div class="item__image">
+						<img src="./img/Calls.svg" alt="">
+					</div>
+					<div class="item__stats">
+						<span>00:00:30</span>
+					</div>
+					<div class="item__name">
+						<span>среднее ожидание принятых</span>
+					</div>
+				</div>
+
+				<div class="reports__item">
+					<div class="item__image">
+						<img src="./img/Calls.svg" alt="">
+					</div>
+					<div class="item__stats">
+						<span>00:03:59</span>
+					</div>
+					<div class="item__name">
+						<span>среднее время принятых</span>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="reports__decor__dashed">
+				<span></span>
+			</div>
+
+			<div class="journal">
+				<div class="journal__settings">
+					<div class="journal__title">
+						<h2>Журнал</h2>
+					</div>
+					<div class="journal__buttons">
+						<button class="journal__print">
+							<img src="./img/Fax.svg" alt="">
+						</button>
+						<button class="journal__show">
+							<img src="./img/Arrow.svg" alt="">
+						</button>
+					</div>
+				</div>
+
+				<div class="journal__count">
+					<span>88 записей</span>
+				</div>
+
+				
+				<div class="table">
+					<div class="table__header">
+						<div>Дата</div>
+						<div></div>
+						<div>С номера</div>
+						<div>На номер</div>
+						<div>Сотрудник</div>
+						<div>Статус</div>
+						<div>Ожидание</div>
+						<div>Длит.</div>
+						<div></div>
+						<div></div>
+					</div>
+					<div class="table__row">
+						<div><span class="table__row__title">12:15:36</span><br><span class="table__row__subtitle">15.02.21</span></div>
+						<div>
+							<button><img src="./img/Arrow-left.svg" alt=""></button>
+						</div>
+						<div>Текст</div>
+						<div>Текст</div>
+						<div>Текст<br><span class="table__row__subtitle">подтекст</span></div>
+						<div>Текст</div>
+						<div>Текст</div>
+						<div>Текст</div>
+						<div class="table__buttons">
+							<button><img src="./img/Share.svg" alt=""></button>
+							<button><img src="./img/Star-dotted.svg" alt=""></button>
+							<button><img src="./img/Play.svg" alt=""></button>
+							<button><img src="./img/Download.svg" alt=""></button>
+							<button><img src="./img/Basket.svg" alt=""></button>
+						</div>
+						<div class="table__show" data-target="tableQueue1">
+							<button class="table__toggle"><img src="./img/Arrow.svg" alt=""></button>
+						</div>
+					</div>
+			
+					<div class="table__queue" id="tableQueue1" data-target="tableQueue1">
+						<div class="table__queue__block">
+							<div><span>На номер</span></div>
+							<div><span>Текст</span></div>
+						</div>
+						<div class="table__queue__block">
+							<div><span>Сотрудник</span></div>
+							<div>Текст<br><span class="table__row__subtitle">подтекст</span></div>
+						</div>
+						<div class="table__queue__block">
+							<div><span>Статус</span></div>
+							<div><span>Текст</span></div>
+						</div>
+						<div class="table__queue__block">
+							<div><span>Ожидание</span></div>
+							<div><span>Текст</span></div>
+						</div>
+						<div class="table__queue__block">
+							<div><span>Длит.</span></div>
+							<div><span>Текст</span></div>
+						</div>
+						<div class="table__queue__buttons">
+							<button><img src="./img/Share.svg" alt=""></button>
+							<button><img src="./img/Star-dotted.svg" alt=""></button>
+							<button><img src="./img/Play.svg" alt=""></button>
+							<button><img src="./img/Download.svg" alt=""></button>
+							<button><img src="./img/Basket.svg" alt=""></button>
+						</div>
+					</div>
+				</div>
+				
+
+				<div class="pagination" id="pagination-container">
+					<div class="pagination__button">
+						<button>1</button>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="filters">
+			<div class="filters__wrapper">
+
+				<div class="filters__decor-left">
+					<span></span>
+				</div>
+
+				<form class="filters__main">
+
+					<button class="filters__close" type="button">
+						<img src="./img/Close.svg" alt="">
+					</button>
+
+					<div class="filters__filter">
+						<h1>Фильтр</h1>
+						<span class="filters__name">Шаблон настроек</span>
+						<select class="filters__select" id="template" name="template">
+							<option value="">Выбрать</option>
+							<option value="">Текст</option>
+							<option value="">Текст</option>
+							<option value="">Текст</option>
+						</select>
+					</div>
+
+					<div class="filters__decor top">
+						<span></span>
+					</div>
+
+					<div class="filters__date">
+						<span class="filters__name">Дата</span>
+						<div class="filters__buttons">
+							<button type="button" data-period="today">Сегодня</button>
+							<button type="button" data-period="yesterday">Вчера</button>
+							<button type="button" data-period="week">Неделя</button>
+							<button type="button" data-period="month">Месяц</button>
+							<button class="calendar" type="button">
+								<img src="./img/Calendar.svg" alt="Выбор даты">
+							</button>
+						</div>
+						<div class="filters__date__time">
+							<label class="time-checkbox">
+								<input type="checkbox" id="timeCheckbox">
+								<span class="checkbox-icon"></span>
+								<span class="filters__name">Временной интервал</span>
+							</label>
+							<input class="time-interval" type="text" id="timeInterval" value="9:00 - 18:00">
+						</div>
+						<div class="filters__decor">
+							<span></span>
+						</div>
+					</div>
+
+					<div class="filters__event">
+						<span class="filters__name">Тип события</span>
+						<div class="filters__buttons">
+							<button type="button">Вызов</button>
+							<button type="button">Факс</button>
+							<button type="button">Голосовое</button>
+							<button type="button">СМС</button>
+							<button type="button">Все</button>
+						</div>
+						<div class="filters__decor">
+							<span></span>
+						</div>
+					</div>
+
+					<div class="filters__additional">
+						<span class="filters__name">Добавочный</span>
+						<select class="filters__select" id="additional" name="additional">
+							<option value="">Выбрать</option>
+							<option value="">Текст</option>
+							<option value="">Текст</option>
+							<option value="">Текст</option>
+						</select>
+						<div class="filters__decor">
+							<span></span>
+						</div>
+					</div>
+
+					<div class="filters__direction">
+						<span class="filters__name">Направление</span>
+						<div class="filters__buttons">
+							<button type="button">Любое</button>
+							<button type="button">Входящее</button>
+							<button type="button">Исходящее</button>
+						</div>
+						<div class="filters__decor">
+							<span></span>
+						</div>
+					</div>
+
+					<div class="filters__framework">
+						<span class="filters__name">Рамки вызова</span>
+						<div class="filters__buttons">
+							<button type="button">Любые</button>
+							<button type="button">Внутренний</button>
+							<button type="button">Внешний</button>
+						</div>
+						<div class="filters__decor">
+							<span></span>
+						</div>
+					</div>
+
+					<div class="filters__status">
+						<span class="filters__name">Статус</span>
+						<select class="filters__select" id="status" name="status">
+							<option value="">Выбрать</option>
+							<option value="">Текст</option>
+							<option value="">Текст</option>
+							<option value="">Текст</option>
+						</select>
+						<div class="filters__decor">
+							<span></span>
+						</div>
+					</div>
+
+					<div class="filters__number">
+						<span class="filters__name">Номер или фрагмент</span>
+						<input class="filters__input" type="text" placeholder="3454">
+						<div class="filters__decor">
+							<span></span>
+						</div>
+					</div>
+
+					<div class="filters__external-number">
+						<span class="filters__name">Внешний номер</span>
+						<select class="filters__select" id="external-number" name="external-number">
+							<option value="">Выбрать</option>
+							<option value="">Текст</option>
+							<option value="">Текст</option>
+							<option value="">Текст</option>
+						</select>
+						<div class="filters__decor">
+							<span></span>
+						</div>
+					</div>
+
+					<div class="filters__queue">
+						<span class="filters__name">Очередь</span>
+						<select class="filters__select" id="filters__queue" name="filters__queue">
+							<option value="">Выбрать</option>
+							<option value="">Текст</option>
+							<option value="">Текст</option>
+							<option value="">Текст</option>
+						</select>
+						<div class="filters__decor">
+							<span></span>
+						</div>
+					</div>
+
+					<div class="filters__additional-group">
+						<span class="filters__name">Группа добавочных</span>
+						<select class="filters__select" id="additional-group" name="additional-group">
+							<option value="">Выбрать</option>
+							<option value="">Текст</option>
+							<option value="">Текст</option>
+							<option value="">Текст</option>
+						</select>
+						<div class="filters__decor">
+							<span></span>
+						</div>
+					</div>
+
+					<div class="filters__call-duration">
+						<span class="filters__name">Длительность вызова</span>
+						<div class="filters__call-duration__content">
+							<div class="filters__call-duration__input">
+								<input class="filters__input call-duration" type="text">
+								<input class="filters__input call-duration" type="text">
+							</div>
+							<div class="filters__buttons call-duration">
+								<button type="button">сек</button>
+								<button type="button">мин</button>
+							</div>
+						</div>
+						<div class="filters__decor">
+							<span></span>
+						</div>
+					</div>
+
+					<div class="filters__record">
+						<span class="filters__name">Запись</span>
+						<div class="filters__buttons">
+							<button type="button">Неважно</button>
+							<button type="button">Есть</button>
+						</div>
+						<div class="filters__decor">
+							<span></span>
+						</div>
+					</div>
+
+					<div class="filters__label">
+						<span class="filters__name">Метка</span>
+						<div class="filters__buttons label">
+							<button type="button">Любая</button>
+							<button type="button">Без метки</button>
+							<button type="button">
+								<img src="./img/Star.svg" alt="">
+							</button>
+							<button type="button">
+								<img src="./img/Thumb up-blue.svg" alt="">
+							</button>
+							<button type="button">
+								<img src="./img/Thumb down.svg" alt="">
+							</button>
+						</div>
+						<div class="filters__decor">
+							<span></span>
+						</div>
+					</div>
+
+					<div class="filters__submit">
+						<div class="filters__buttons">
+							<button type="button">Применить</button>
+						</div>
+					</div>
+
+				</form>
+
+			</div>
+		</div>
+
+	</div>
+	
+	<script src="script.js"></script>
+</body>
+</html>
